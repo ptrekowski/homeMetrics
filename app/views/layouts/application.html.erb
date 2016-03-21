@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Homemetrics</title>
+  <title><%= yield(:title) %></title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
+  <meta name="keywords" content="Rhode Island, RI, Connecticut, CT, Duct testing, Blower door testing, Duct leakage testing, Envelope testing" />
+  <meta name="description" content="We provide duct leakage and blower door testing for all of Rhode Island (RI) and Southeastern Connecticut (CT)." />
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= stylesheet_link_tag	 'default', media: 'all' %>
   <%= stylesheet_link_tag	 'fonts', media: 'all' %>
@@ -16,6 +16,26 @@
   <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 </head>
 <body>
+
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><img src="public/HomeMetricsLogo2.png" height="95"/></h1>
+			<!--<span>Our Standards Are The Highest</span>
+            <h5>And So Should Yours</h5>-->
+            <span></span>
+        </div>
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
+				<li><a href="#" accesskey="2" title="">Home Inspections</a></li>
+				<li><a href="#" accesskey="3" title="">Duct and Envelope Testing</a></li>
+				<!--<li><a href="#" accesskey="4" title="">Careers</a></li>-->
+				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 <%= yield %>
 
