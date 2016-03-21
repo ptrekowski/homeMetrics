@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= yield(:title) %></title>
+  <title><%= full_title(yield(:title)) %></title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="keywords" content="Rhode Island, RI, Connecticut, CT, Duct testing, Blower door testing, Duct leakage testing, Envelope testing" />
   <meta name="description" content="We provide duct leakage and blower door testing for all of Rhode Island (RI) and Southeastern Connecticut (CT)." />
@@ -12,32 +12,62 @@
   <%= csrf_meta_tags %>
 
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
   <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+  <style>
+  	.navbar-custom {
+    background-color:#174164;
+    color:#ffffff;
+    border-radius:0;
+	}
+
+	.navbar-custom .navbar-nav > li > a {
+	    color:#fff;
+	}
+	.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:focus {
+	    text-decoration-style: none;
+	    background-color:black;
+	}
+	.navbar-custom .navbar-nav > li> a:hover, .nav > li > a:focus{
+	    background-color: black;
+	}
+	  </style>
 </head>
 <body>
+ <nav class="navbar navbar-custom navbar-static-top" style="margin-bottom: 0px;">
+  <div class="container-fluid">
+  	<div class="container">
 
-<div id="header-wrapper">
-	<div id="header" class="container">
-		<div id="logo">
-			<h1><img src="public/HomeMetricsLogo2.png" height="95"/></h1>
-			<!--<span>Our Standards Are The Highest</span>
-            <h5>And So Should Yours</h5>-->
-            <span></span>
-        </div>
-		<div id="menu">
-			<ul>
-				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-				<li><a href="#" accesskey="2" title="">Home Inspections</a></li>
-				<li><a href="#" accesskey="3" title="">Duct and Envelope Testing</a></li>
-				<!--<li><a href="#" accesskey="4" title="">Careers</a></li>-->
-				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
+
+	    <div class="collapse navbar-collapse navbar-right" id="myNavbar" style=" min-height: 105px; padding-top: 50px;">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#">Home</a></li>
+	        <li><a href="#">Homeowners</a></li>
+	        <li><a href="#">Contractors</a></li>
+	        <li><a href="#">Duct Testing</a></li>
+	        <li><a href="#">Envelope Testing</a></li> 
+	        <li><a href="#">Contact Us</a></li> 
+	      </ul>
+	    </div>
+
+	    <div class="navbar-left">
+	    	<img style="max-height:95px; margin-top: 0px;"
+             src="/HomeMetricsLogo2.png">
+      </div>
+
+    </div>
+  </div>
+</nav>
 
 <%= yield %>
+
+<div id="copyright" class="container">
+	<p style="color: black;">&copy; Home Metrics. All rights reserved.</a></p>
+	<p style="color: black;">BPI&reg Certification #5056743</p>
+	<p style="color: black;">Home Metrics | Hopkinton, RI 02833</p>
+</div>
 
 </body>
 </html>

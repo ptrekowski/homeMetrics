@@ -12,7 +12,8 @@ body
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 11pt;
 	font-weight: 300;
-	color: #6c6c6c
+	/*color: #6c6c6c */
+	color: black;
 }
 
 h1, h2, h3
@@ -478,7 +479,7 @@ ul.contact li a.icon-rss:before
 	padding: 3em 0em;
 	/*background: #E24E2A;*/
     /*background: #1B973C;*/
-    background: #3f3f3f;
+    background: #174164;
 }
 
 #banner
@@ -511,7 +512,19 @@ ul.contact li a.icon-rss:before
 	padding: 0em;
 	font-weight: 400;
 	font-size: 3em;
-	color: #555555;
+	color: white;
+}
+
+#banner p
+{
+	color: white;
+	font-size: 20px;
+
+}
+
+#banner h1
+{
+	color: white;
 }
 
 #banner span
@@ -686,27 +699,21 @@ ul.contact li a.icon-rss:before
 	color: #FFF;
 }
 
-.column1,  .column2,  .column3,  .column4
+.column1,  .column2
 {
-	width: 282px;
+	width: 45%;
 }
 
-.column1,  .column2
+.column1
 {
 	float: left;
 	margin-right: 24px;
 }
 
-.column3
-{
-	float: left;
-}
-
-.column4
+.column2
 {
 	float: right;
 }
-
 
 	#header-featured
 	{
