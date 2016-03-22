@@ -3,8 +3,15 @@
 <head>
   <title><%= full_title(yield(:title)) %></title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="keywords" content="Rhode Island, RI, Connecticut, CT, Duct testing, Blower door testing, Duct leakage testing, Envelope testing" />
   <meta name="description" content="We provide duct leakage and blower door testing for all of Rhode Island (RI) and Southeastern Connecticut (CT)." />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= stylesheet_link_tag	 'default', media: 'all' %>
   <%= stylesheet_link_tag	 'fonts', media: 'all' %>
@@ -12,7 +19,9 @@
   <%= csrf_meta_tags %>
 
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 
   <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
@@ -33,7 +42,7 @@
 	.navbar-custom .navbar-nav > li> a:hover, .nav > li > a:focus{
 	    background-color: black;
 	}
-	  </style>
+	</style>
 </head>
 <body>
  <nav class="navbar navbar-custom navbar-static-top" style="margin-bottom: 0px;">
@@ -43,12 +52,12 @@
 
 	    <div class="collapse navbar-collapse navbar-right" id="myNavbar" style=" min-height: 105px; padding-top: 50px;">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Home</a></li>
-	        <li><a href="#">Homeowners</a></li>
-	        <li><a href="#">Contractors</a></li>
-	        <li><a href="#">Duct Testing</a></li>
-	        <li><a href="#">Envelope Testing</a></li> 
-	        <li><a href="#">Contact Us</a></li> 
+	        <li class="active"><%= link_to("Home", home_path) %></li>
+	        <li><a href="#" style="display: none;">Homeowners</a></li>
+	        <li><a href="#" style="display: none;">Contractors</a></li>
+	        <li><a href="#" style="display: none;">Duct Testing</a></li>
+	        <li><a href="#" style="display: none;">Blower Testing</a></li> 
+	        <li><%= link_to("Contact Us", contact_path) %></li> 
 	      </ul>
 	    </div>
 

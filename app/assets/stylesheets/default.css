@@ -476,7 +476,7 @@ ul.contact li a.icon-rss:before
 	#banner-wrapper
 {
 	overflow: hidden;
-	padding: 3em 0em;
+	padding: 0em 0em;
 	/*background: #E24E2A;*/
     /*background: #1B973C;*/
     background: #174164;
@@ -522,7 +522,7 @@ ul.contact li a.icon-rss:before
 
 }
 
-#banner h1
+#banner h1, h2, h3, h4
 {
 	color: white;
 }
@@ -613,7 +613,7 @@ ul.contact li a.icon-rss:before
 {
 	overflow: hidden;
 	padding: 5em 0em;
-	border-top: 1px solid rgba(255,255,255,0.08);
+
 }
 
 #copyright p
@@ -638,9 +638,14 @@ ul.contact li a.icon-rss:before
 #featured-wrapper
 {
 	overflow: hidden;
-	padding: 6em 0em;
+	padding: 1em 0em;
 	background: #112940;
 	text-align: center;
+}
+
+#featured-wrapper > h1
+{
+	border-bottom: 1px solid white;
 }
 
 #featured
@@ -710,21 +715,51 @@ ul.contact li a.icon-rss:before
 	margin-right: 24px;
 }
 
+.column1 a
+{
+	color: green;
+}
+
 .column2
 {
 	float: right;
 }
-
-	#header-featured
+.header-featured
+{
+	height: 30em;
+	background-position: center;
+	background-size: cover;
+}
+	#header-home
 	{
-		height: 30em;
-		/*background-image: url(images/banner.jpg);*/
-        background-image: url(Retrotec.jpg);
-		background-position: center;
-		background-size: cover;
-        /*opacity: 0.5;*/
+		background-image: url(Retrotec.jpg);
 	}
+.contact-header-featured
+{
+	height: 30em;
+	background-position: left;
+}
 
+.contact-header
+{
+	border-radius: 25px;
+	border: thin solid white;
+	padding: 10px;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.contact-header h1
+{
+	color: white;
+}
+
+#header-contact
+{
+	background-image: url(phoneEmail.png);
+	background-size: 20em;
+	background-repeat: no-repeat;
+}
 
 #slider-wrapper
 {

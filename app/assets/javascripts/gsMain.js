@@ -1,0 +1,1 @@
+TweenLite.to(".MainAdvert", 2, {left:600, backgroundColor: 'fff'});

@@ -1,14 +1,22 @@
-
-
-<div id="header-featured"> </div>
+<div class="header-featured" id="header-home"> </div>
 <div id="banner-wrapper">
+<div style="background-color: black; height: 100px; padding-top: 25px;">
+	<h1 id="MainAdvert" style="color: white; text-align: center">Looking For Affordable Duct or Blower Door Testing?</h1>
+	</div>
 	<div id="banner" class="container">
-		<h1>Looking For Affordable Duct or Blower Door Testing in RI or CT?</h1>
-		<p style="border-bottom: 1px solid white; "></p>
-		<h3>We service all of <strong>Rhode Island and Eastern Connecticut</strong> and provide comprehensive duct, blower door and combustion appliance zone testing for homeowners and contractors at an affordable price. Whether you are a prospective homeowner looking to evaluate the condition of a house you are about to purchase, or a contractor that requires a blower door test for a Certificate of Occupancy.</h3>
-		<h3>Give us a call at <strong>(401) 207-4560</strong> or email to <strong>RekowskiPaulT@gmail.com</strong> to schedule an appointment or to request a quote.</h3>
+		<div style="margin-top: 50px;"></div>
+		<blockquote style="border-left: 0px;">We service all of <strong>Rhode Island and Eastern Connecticut</strong> by providing comprehensive duct, blower door and combustion appliance zone testing (CAZ) for homeowners and contractors at an affordable price. 
+		</blockquote>
+		<blockquote style="border-left: 0px;">
+			Whether you are a prospective homeowner looking to evaluate the condition of a house you are about to purchase, or a contractor that requires a blower door test for a Certificate of Occupancy, contact us for a quote or to set up an appointment.
+		</blockquote>
+		
+		<%= link_to('CONTACT US', contact_path, class: 'btn btn-success') %>
+
+		<div style="margin-bottom: 75px;"></div>
 	</div>
 </div>
+
 <div id="wrapper">
 	<div id="featured-wrapper">
 		<div id="featured" class="container">
@@ -27,3 +35,19 @@
 		</div>
 	</div>
 
+<!--
+<div id="banner-wrapper">
+	<div id="banner" class="container">
+		<h1></h1>
+		<p style="border-bottom: 1px solid white; margin-bottom: 50px;"></p>
+		<blockquote>We service all of <strong>Rhode Island and Eastern Connecticut</strong> by providing comprehensive duct, blower door and combustion appliance zone testing for homeowners and contractors at an affordable price.
+		</blockquote>
+		<blockquote>
+			Whether you are a prospective homeowner looking to evaluate the condition of a house you are about to purchase, or a contractor that requires a blower door test for a Certificate of Occupancy, contact us for a quote or to set up an appointment.
+		</blockquote>
+		
+		<%= link_to('CONTACT US', contact_path, class: 'btn btn-success') %>
+	</div>
+</div>
+
+-->
